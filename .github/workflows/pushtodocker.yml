@@ -51,6 +51,8 @@ jobs:
       with:
         context: .
         file: ./Dockerfile
+        run: |
+          ls
+          docker images
         push: true
-        tags: latest, ${{ github.run_number }}
-        labels: ${{ steps.meta.outputs.labels }}
+        tags: marco501/pythoncustom:${{ github.run_number }}
