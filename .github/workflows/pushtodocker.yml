@@ -21,7 +21,7 @@ jobs:
         pip  install -r requirements.txt
         pip install pytest
     - name: Run test
-      run: python pytest-v
+      run: python pytest -v
 
   Deploy:
     needs: Build
