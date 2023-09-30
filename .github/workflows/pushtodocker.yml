@@ -1,3 +1,5 @@
+name: Publish to DockerHub
+
 on:
   push:
     branches:
