@@ -24,7 +24,7 @@ jobs:
       run: | 
         ls
         pwd
-        pytest -v /tests/python_tests.py
+        pytest -v tests/python_tests.py
 
   Deploy:
     needs: Build
