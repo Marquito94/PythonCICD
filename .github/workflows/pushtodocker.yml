@@ -23,8 +23,8 @@ jobs:
     - name: Run test
       run: | 
         ls
-	pwd
-	pytest -v /tests/python_tests.py
+        pwd
+        pytest -v /tests/python_tests.py
 
   Deploy:
     needs: Build
