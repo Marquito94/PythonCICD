@@ -28,6 +28,6 @@ jobs:
       needs: Build
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: |
-        docker build -t pythonimage .
+        docker build -t pythoncustom .
         docker tag pythoncustom marco501/pythoncustom
         docker push marco501/pythoncustom
